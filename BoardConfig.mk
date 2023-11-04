@@ -94,9 +94,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-08-01
-
 # System as Root
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
