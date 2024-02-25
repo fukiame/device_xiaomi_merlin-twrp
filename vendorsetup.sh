@@ -86,5 +86,6 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 
     export FOX_DELETE_MAGISK_ADDON=1
     export OF_FLASHLIGHT_ENABLE=0
+    export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
   fi
 fi
