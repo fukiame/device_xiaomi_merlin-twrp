@@ -84,6 +84,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
     export FOX_DELETE_AROMAFM=1
     export FOX_USE_NANO_EDITOR=1
 
+    export FOX_DELETE_INITD_ADDON=1
     export FOX_DELETE_MAGISK_ADDON=1
     export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
   fi
