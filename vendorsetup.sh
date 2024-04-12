@@ -38,12 +38,12 @@ fi
 
 # Dirty Fix: Only declare orangefox vars when needed
 if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
-  echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for selene...\x1b[m"
+  echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for merlinx...\x1b[m"
   if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Version / Maintainer infos
-    export OF_MAINTAINER="TillYourTearGoes"
-    export OF_MAINTAINER_AVATAR="$(gettop)/device/xiaomi/selene/maintainer_avatar.png"
-    export FOX_VERSION=R11.1_4
+    export OF_MAINTAINER="unknown"
+    #export OF_MAINTAINER_AVATAR="$(gettop)/device/xiaomi/selene/maintainer_avatar.png"
+    export FOX_VERSION=R11.1_1
     export FOX_VANILLA_BUILD=1
     #export FOX_VARIANT=A11
     export FOX_BUILD_TYPE="Unofficial"
@@ -51,7 +51,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
     # Device info
     export FOX_AB_DEVICE=1
     export FOX_VIRTUAL_AB_DEVICE=1
-    export TARGET_DEVICE_ALT="selenes, eos"
+    export TARGET_DEVICE_ALT="merlin, merlin_eea, merlinnfc"
 
     # OTA / DM-Verity / Encryption
     export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
@@ -89,6 +89,6 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
     export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
     export OF_NO_SPLASH_CHANGE=1
 
-    cp "${OF_MAINTAINER_AVATAR}" "$(gettop)/bootable/recovery/gui/theme/portrait_hdpi/images/Default/About/maintainer.png"
+    #cp "${OF_MAINTAINER_AVATAR}" "$(gettop)/bootable/recovery/gui/theme/portrait_hdpi/images/Default/About/maintainer.png"
   fi
 fi

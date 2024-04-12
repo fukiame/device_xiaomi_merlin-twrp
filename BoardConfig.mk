@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/selene
+DEVICE_PATH := device/xiaomi/merlinx
 
 # For building with aosp manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -43,10 +43,10 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := selene
+TARGET_OTA_ASSERT_DEVICE := merlin,merlinx,merlin_eea,merlinnfc
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := selene
+TARGET_BOOTLOADER_BOARD_NAME := mt6768
 TARGET_NO_BOOTLOADER := true
 
 # Display

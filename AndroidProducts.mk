@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_selene.mk
+    $(LOCAL_DIR)/twrp_merlinx.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_selene-user \
-    twrp_selene-userdebug \
-    twrp_selene-eng
+    twrp_merlinx-user \
+    twrp_merlinx-userdebug \
+    twrp_merlinx-eng
